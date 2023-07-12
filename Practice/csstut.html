@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Testing</title>
+    <style>
+        #p1{ 
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif ;
+            font-weight: bold;
+            line-height: 1.5em;
+            font-style: italic;
+            color: rgb(250, 26, 104);
+            text-decoration-line: underline;
+        }
+        body{
+            background-color: rgb(215, 192, 203);
+        }
+        #p2{
+            font-size: xx-large;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            background-color: rgb(152, 238, 77);
+            height: 300px;
+            width: 920px;
+            /* border-color: red;
+            border-width: 5px;
+            border-style: solid;
+            Above mentioned three lines code is equivalent to the below mentioned single line code. */
+            border: solid 5px red;
+            border-radius: 20px;
+        }
+        #p3{
+            font-size: 40px;
+            background-color: rgb(223, 50, 50);
+            height: 300px;
+            width: 920px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-top:solid 4px rgb(10, 13, 172);
+            border-bottom:solid 4px rgb(16, 100, 27);
+            border-right:solid 10px rgb(185, 194, 17);
+            border-left:solid 10px rgb(127, 16, 80);
+            border-bottom-right-radius: 40px;
+            border-top-left-radius: 40px;
+            background-image: url(test.jpg);
+            background-size: 40% 50%;
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+        #cont1{
+            border:solid blue 3px;
+            background-color: rgb(131, 200, 246);
+            border-radius: 250px;
+            height: 300px;
+            width: 920px;
+            font-size: 30px;
+            /* We can also give top,bottom,left,right padding seperately like  padding-left: 20px; */
+            /* padding: 30px  -> it will give equal padding to all 4 sides */
+            /* padding: 30px 50px; -> padding: top/bottom right/left  */
+            /* padding: 30px 50px 70px; -> padding: top right/left bottom  */
+            padding: 30px 50px 70px 90px;  
+            /* Above statement will be executed like this ->padding: top right bottom left*/
+
+            /* Same properties as of padding are applied for margin */
+
+            margin:80px 50px;
+            box-sizing: border-box;
+        }
+        .btn{
+            font-size: 18px;
+            font-family: Verdana;
+            text-decoration: none;
+            background-color: rgb(235, 240, 228);
+            cursor: pointer;
+        }
+        #read{
+            border: 1px solid black;
+            border-width: 2px;
+            
+        }
+        .btn:hover{
+            color:blue;
+            background-color: rgb(253, 253, 253);
+        }
+        .btn:visited{
+            border: none;
+            background-color: yellow;
+        }
+        .btn:active{
+            background-color: red;
+            border: none;
+        }
+        
+    </style>
+</head>
+<body>
+   <u> <h1 style="font-weight: bolder;">Garbage code :-</h1></u>
+    <p id="p1">Lorem ipsum dolor sit amet <u style="text-decoration-color: rgb(117, 180, 50);"> consectetur adipisicing</u> elit. Reiciendis aliquam qui iusto nemo, praesentium earum aliquid quae blanditiis modi facilis? Ab inventore soluta nisi dolorum nulla. <span>Nisi saepe alias velit enim dicta optio reprehenderit ab amet vero. Omnis quaerat beatae rem corrupti i</span>ste minima expedita cum deleniti nihil, in illo</p>
+
+    <p id="p2">This is the second paragraph for testing. Now, it's time for the lorem i.e. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ea labore, voluptates enim expedita rerum repudiandae, architecto voluptatum nihil non atque porro ullam facere? Consectetur accusantium quidem in? Perferendis, tempora. <br><br>
+    <a href="https:\\www.google.com" id="read" class="btn">Read more</a> &nbsp;
+    <button id="contact" class="btn"><b>Contact us</b></button></p>
+    
+    <div id="cont1">
+        <h3>Margin and Padding tester</h3>
+        <p>This is the container which we are going to use for the testing of Margin and padding. So, let's experiment on it and explore something more about the concepts in CSS.</p>
+    </div>
+
+    <p id="p3">This is third paragraph. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, amet.</p>
+
+</body>
+</html>

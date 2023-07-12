@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unsplash.com/photos/s4dWUDv6X1c">
+
+    <style>
+        html {
+            font-size: 12px;
+        }
+
+        .cont {
+            border: 2px solid red;
+            font-size: 8px;
+            margin: 12px;
+            height: 100vh;
+        }
+
+        #id1 {
+            font-size: 3em;
+        }
+
+        #id2 {
+            font-size: 3rem;
+            width: 100vw;
+        }
+
+        @media (max-width:700px) {
+            #id1 {
+                background-color: rebeccapurple;
+            }
+        }
+
+        @media (min-width:500px) and (max-width:1000px) {
+            #id1 {
+                background-color: red;
+            }
+        }
+
+        div>h1 {
+            background-color: blueviolet;
+        }
+
+        div+h1 {
+            background-color: aqua;
+        }
+        input[placeholder="abc"]{
+            background-color: yellow;
+        }
+        hr{
+            background-color: aqua;
+            color: brown;
+            border:1px solid yellow
+        }
+        li:nth-child(3){
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+        li:nth-child(2n+5){
+            background-color: tomato;
+            text-align: center;
+            font-size: 10px;
+            color: rgb(221, 228, 234);
+        }
+        li:nth-child(even){
+            background-color: rgb(173, 52, 145);
+            font-size: 13px;
+            color: rgb(221, 228, 234); 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <h1 id="id1">This is my first heading</h1>
+        <h1 id="id2">This is my second heading</h1>
+        <ul>
+            <div>
+                hello world
+            </div>
+            <p>
+                hello
+            </p>
+            <h1 id="id3">This is my third heading</h1>
+        </ul>
+        <hr>
+        <ul>
+            <li>This is l1</li>
+            <li>This is l2</li>
+            <li>This is l3</li>
+            <li>This is l4</li>
+            <li>This is l5</li>
+            <li>This is l6</li>
+            <li>This is l7</li>
+            <li>This is l8</li>
+        </ul>
+    </div>
+</body>
+</html>

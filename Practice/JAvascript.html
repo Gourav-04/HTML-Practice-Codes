@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing of Javascript</title>
+</head>
+<body>
+    <div class="oper" id="op1">
+        Enter the First number: 
+        <input type="number">
+    </div>
+    <div class="oper" id="op2">
+        Enter the second number
+        <input type="number">
+    </div>
+    <div class="oper" id="operator">
+        Enter the operation  you want to perform:
+        <input type="text">
+    </div>
+    <br>
+    <button onclick="calculator()">Result</button>
+    <div id="result">
+
+    </div>
+</body>
+<script type="text/Javascript">
+    // alert("Warning!! You Website can be hacked here.");
+    // prompt("Write Something here ","hello");
+    // var newvar=1.25;
+    // document.write(newvar);
+
+    // var a=3;
+    // var b=6;
+    // b+=5;
+    // alert(b);
+
+    var a=document.getElementById("op1");
+    var b=document.getElementById("op2");
+    var operator = document.getElementById("operator");
+    function calculator() {
+        alert(b);
+        // document.getElementById("result").innerHTML= a operator b;
+    }
+</script>
+</html>

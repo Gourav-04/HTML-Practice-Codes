@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display and Position Property</title>
+    <style>
+        .cont{
+            border: 2px solid black;
+            height: 2500px;
+            background-color: antiquewhite;
+        }
+        .box{
+            border: 2px solid brown;
+            display: inline-block;
+            width: 10%;
+            height: 150px;
+            padding: 12px;
+            margin: 2px;
+            }
+            #box3{
+            /* Precedence in positioning of direction is top and left instead of bottom and right. */
+
+            /* position: static;
+            top: 150px; */
+
+            /* position: absolute;
+            right: 40px;
+            left: 40px;
+            bottom: 100px;
+            top: 100px; */
+
+            /* position: relative;
+            right: 40px;
+            left: 40px;
+            bottom: 100px;
+            top: 100px; */
+
+            /* position: fixed;
+            right: 40px;
+            left: 40px;
+            bottom: 100px;
+            top: 100px;  */
+
+            /* position: sticky;
+            right: 40px;
+            left: 40px;
+            bottom: 100px;
+            top: 100px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box" id="box1">Box 1
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box" id="box2">Box 2
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box" id="box3">Box 3
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box" id="box4">Box 4
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</body>
+</html>
